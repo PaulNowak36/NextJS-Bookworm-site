@@ -27,20 +27,20 @@ const BlogPagination = async ({ params }) => {
       <SeoMeta title="Blog Pagination" />
       <section className="section">
         <div className="container">
-          <HomePage />
+          <HomePage accueil={accueilPage} /> 
           {/* <Posts className="mb-16" posts={currentPosts} authors={authors} /> */}
           {/* <Pagination totalPages={totalPages} currentPage={currentPage} /> */}
-          {/* <div>
+          <div>
             <h1>
               Je suis là
             </h1>
 
-            {/* <h3 className="mb-2">
+            {/* { <h3 className="mb-2">
               <Link href={`/accueil`} className="block hover:text-primary">
                 {accueilPage.frontmatter.title}
               </Link>
-            </h3> }
-          </div> */}
+            </h3> } */}
+          </div> 
         </div>
       </section>
     </>
