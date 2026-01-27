@@ -8,7 +8,23 @@
         {
           "name": "Chiffres",
           "url": "/chiffres"
-        }
+        }, 
+        {
+          "name": "Domaines",
+          "url": "/domaines"
+        },
+        {
+          "name": "Engagement",
+          "url": "/engagement"
+        },
+        {
+          "name": "Histoire",
+          "url": "/histoire"
+        },
+        {
+          "name": "Missions",
+          "url": "/missions"
+        }    
       ]
     },
     {
