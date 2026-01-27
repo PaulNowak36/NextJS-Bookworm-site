@@ -2,15 +2,18 @@
   "main": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "/",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Chiffres",
+          "url": "/chiffres"
+        }
+      ]
     },
     {
       "name": "About",
       "url": "/about"
-    },
-    {
-      "name": "Accueil",
-      "url": "/accueil"
     },
     {
       "name": "Contact",
