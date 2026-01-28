@@ -1,23 +1,51 @@
 import config from "@config/config";
 import { markdownify } from "@lib/utils/textConverter";
+import { marked } from "marked";
 
 const Contact = ({ data }) => {
-  const { frontmatter } = data;
+  const { frontmatter, content } = data;
   const { title } = frontmatter;
   const { contact_form_action } = config.params;
 
   return (
     <section className="section">
-      <div className="container max-w-[700px]">
+      <div className="container w-full">
+
+        {/* Titre */}
         {markdownify(title, "h1", "h2 mb-8 text-center")}
+
+        {/* 🔥 Contenu Markdown du fichier contact.md */}
+        <div
+          className="prose max-w-none mb-10"
+          dangerouslySetInnerHTML={{
+            __html: marked(content),
+          }}
+        />
+      </div>
+
+      {/* Formulaire */}
+      <div className="container max-w-[700px]">
+
         <form
           className="contact-form"
           method="POST"
           action={contact_form_action}
         >
           <div className="mb-6">
+            <label className="mb-2 block" htmlFor="firstName">
+              Prénom
+            </label>
+            <input
+              className="form-input w-full"
+              name="firstName"
+              type="text"
+              required
+            />
+          </div>
+
+          <div className="mb-6">
             <label className="mb-2 block" htmlFor="name">
-              Name
+              Nom
             </label>
             <input
               className="form-input w-full"
@@ -26,6 +54,7 @@ const Contact = ({ data }) => {
               required
             />
           </div>
+
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="email">
               Email
@@ -37,9 +66,10 @@ const Contact = ({ data }) => {
               required
             />
           </div>
+
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="subject">
-              Subject
+              Sujet
             </label>
             <input
               className="form-input w-full"
@@ -48,13 +78,15 @@ const Contact = ({ data }) => {
               required
             />
           </div>
+
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="message">
-              Message
+              Tapez votre message
             </label>
             <textarea className="form-textarea w-full" rows="7" />
           </div>
-          <button className="btn btn-outline-primary">Submit Now</button>
+
+          <button className="btn btn-outline-primary">Envoyer</button>
         </form>
       </div>
     </section>
