@@ -51,6 +51,29 @@
       ]
     },
     {
+      "name": "Equipe",
+      "url": "/equipe",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Fondateurs",
+          "url": "/equipe/fondateurs"
+        },
+        {
+          "name": "Médecins",
+          "url": "/equipe/medecins"
+        },
+        {
+          "name": "Conseil consultatif",
+          "url": "/equipe/conseil-consultatif"
+        },
+        {
+          "name": "Gestion Opérations",
+          "url": "/equipe/gestion-operations"
+        }    
+      ]
+    },
+    {
       "name": "About",
       "url": "/about"
     },
