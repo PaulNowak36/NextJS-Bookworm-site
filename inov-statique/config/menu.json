@@ -122,8 +122,8 @@
           "url": "/elements"
         },
         {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
+          "name": "Mentions Légales",
+          "url": "/mentions-legales"
         }
       ]
     }
@@ -142,8 +142,8 @@
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
-      "url": "/privacy-policy"
+      "name": "Mentions Légales",
+      "url": "/mentions-legales"
     }
   ]
 }
