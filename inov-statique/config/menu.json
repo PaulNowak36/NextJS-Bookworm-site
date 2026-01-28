@@ -35,7 +35,19 @@
         {
           "name": "Conseil",
           "url": "/services/conseil"
-        } 
+        },
+        {
+          "name": "Développement",
+          "url": "/services/developpement"
+        },
+        {
+          "name": "Gestion",
+          "url": "/services/gestion"
+        },
+        {
+          "name": "Services clés",
+          "url": "/services/services-cles"
+        }    
       ]
     },
     {
