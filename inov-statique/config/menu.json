@@ -28,6 +28,17 @@
       ]
     },
     {
+      "name": "Services",
+      "url": "/services/",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Conseil",
+          "url": "/services/conseil"
+        } 
+      ]
+    },
+    {
       "name": "About",
       "url": "/about"
     },
