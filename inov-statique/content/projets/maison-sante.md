@@ -1,0 +1,12 @@
+---
+title: "Maison de Santé Pluriprofessionnelle (MSP)"
+draft: false
+---
+
+La Maison de Santé Pluriprofessionnelle (MSP) est un projet structurant visant à offrir un espace de soins moderne, coordonné et accessible à tous. 
+
+L’objectif est de rassembler plusieurs professionnels de santé au sein d’un même lieu afin de faciliter la prise en charge, fluidifier les parcours patients et renforcer la coopération entre praticiens.
+
+Ce projet s’inscrit dans une démarche d’amélioration continue de la qualité des services rendus à la population. Il met l’accent sur la prévention, l’accompagnement personnalisé et l’innovation dans l’organisation des soins. 
+
+La MSP se veut également un lieu d’échanges, de collaboration et de développement de nouvelles pratiques professionnelles au service du territoire.

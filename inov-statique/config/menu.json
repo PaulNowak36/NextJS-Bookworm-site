@@ -74,6 +74,25 @@
       ]
     },
     {
+      "name": "Projets",
+      "url": "/projets",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Centres",
+          "url": "/projets/centres"
+        },
+        {
+          "name": "Maison de Santé",
+          "url": "/projets/maison-sante"
+        },
+        {
+          "name": "Autres Projets",
+          "url": "/projets/autres-projets"
+        }
+      ]
+    },
+    {
       "name": "About",
       "url": "/about"
     },
