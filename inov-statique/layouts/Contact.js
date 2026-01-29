@@ -1,10 +1,11 @@
 import config from "@config/config";
 import { markdownify } from "@lib/utils/textConverter";
 import { marked } from "marked";
+import Image from "next/image";
 
 const Contact = ({ data }) => {
   const { frontmatter, content } = data;
-  const { title } = frontmatter;
+  const { title, image } = frontmatter;
   const { contact_form_action } = config.params;
 
   return (
@@ -22,6 +23,16 @@ const Contact = ({ data }) => {
           }}
         />
       </div>
+
+      {/* <div className="img-cover mb-8 flex items-center justify-center">
+        <Image
+          src="/images/favicon.png"
+          width={100}
+          height={100}
+          alt={title}
+          className="rounded-lg"
+        />
+      </div> */}
 
       {/* Formulaire */}
       <div className="container max-w-[700px]">

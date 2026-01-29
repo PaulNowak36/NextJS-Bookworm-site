@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 layout: "contact"
+image: "/images/author.jpg"
 draft: false
 ---
 
@@ -11,4 +12,4 @@ Pour toute demande professionnelle, partenariat ou projet international, vous po
 **Téléphone :** +33 2 48 23 99 60  
 **Email :** inov.rdv@gmail.com
 
-### Formulaire de contact
+## Formulaire de contact

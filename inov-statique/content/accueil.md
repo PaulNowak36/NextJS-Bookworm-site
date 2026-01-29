@@ -20,3 +20,17 @@ Le Groupe **INOV** développe et opère des centres de médecine nucléaire mode
 <SousMenuButton href="/histoire" className="btn btn-outline-primary">Notre histoire</SousMenuButton>
 <SousMenuButton href="/missions" className="btn btn-outline-primary">Nos missions</SousMenuButton>
 
+---
+
+Accédez aux différentes infos:
+
+<Button href="/chiffres" className="btn btn-outline-primary">
+  Nos chiffres clés
+</Button>
+
+<MenuButton href="/chiffres" className="btn btn-outline-primary">
+  Nos chiffres clés
+</MenuButton>
+
+<ImageWrapper src="/images/author.jpg" height={100} width={100} /> 
+
