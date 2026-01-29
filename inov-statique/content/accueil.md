@@ -29,8 +29,8 @@ Accédez aux différentes infos:
 </Button>
 
 <MenuButton href="/chiffres" className="btn btn-outline-primary">
-  Nos chiffres clés
+  <ImageWrapper src="/images/author.jpg" height={200} width={200} /> 
 </MenuButton>
 
-<ImageWrapper src="/images/author.jpg" height={100} width={100} /> 
+
 
