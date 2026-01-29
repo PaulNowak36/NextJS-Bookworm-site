@@ -24,11 +24,22 @@ Le Groupe **INOV** développe et opère des centres de médecine nucléaire mode
 
 Accédez aux différentes infos:
 
-<MenuButton href="/chiffres" className="btn btn-outline-primary">
-  <ImageWrapper src="/images/author.jpg" > 
-    <span className="text-white">Hello</span>
+<MenuButton href="/services" className="btn btn-outline-primary">
+  <ImageWrapper src="/images/scanner2.jpg" > 
+    <span className="text-white font-[Sans-serif] text-4xl">Services</span>
   </ImageWrapper>
 </MenuButton>
 
+<MenuButton href="/equipe" className="btn btn-outline-primary">
+  <ImageWrapper src="/images/equipe.png" > 
+    <span className="text-white font-[Sans-serif] text-4xl">L'Equipe</span>
+  </ImageWrapper>
+</MenuButton>
+
+<MenuButton href="/projets" className="btn btn-outline-primary">
+  <ImageWrapper src="/images/centre_saint-doulchard.jpg" > 
+    <span className="text-white font-[Sans-serif] text-4xl">Projets</span>
+  </ImageWrapper>
+</MenuButton>
 
 
