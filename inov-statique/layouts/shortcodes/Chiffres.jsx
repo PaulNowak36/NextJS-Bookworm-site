@@ -1,11 +1,11 @@
 
 
-const Chiffres = ({ color, children }) => {
+const Chiffres = ({ width, height, color, children }) => {
   return (
    <div
-      className={`w-40 h-40 rounded-full 
-          inline-flex items-center justify-center 
-          ${color} text-white text-xl font-bold`}>
+      className={`${width} ${height} rounded-full 
+          inline-flex items-center justify-center text-center
+          ${color} text-white text-xl font-bold border-4 border-grey-300`}>
       {children}
    </div>
   )
