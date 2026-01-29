@@ -9,6 +9,10 @@ Regardez ces fameux chiffres:
     ### **3 sites** à Saint-Doulchard, Bourges et Nevers dans la Région Centre-Val-De-Loire
 </Chiffres>
 
+<Chiffres width="w-60" height="h-60" color="bg-amber-100"> 
+    ### **Capital de 93 800,00 €** 
+</Chiffres>
+
 <Chiffres width="w-80" height="h-80" color="bg-pink-100"> 
     ### **5 professionnels de santé** dont **3 radiologues** et **2 cardiologues**.
 </Chiffres>
@@ -29,6 +33,3 @@ Regardez ces fameux chiffres:
     #### **1 gamma SPECTRUM**
 </Chiffres>
 
-<Chiffres width="w-60" height="h-60" color="bg-amber-100"> 
-    ### **Capital de 93 800,00 €** 
-</Chiffres>
