@@ -19,3 +19,46 @@ Nous plaçons l’humain au cœur de notre démarche : qualité des examens, ré
     - **Activité 2** : tepscan
   </div>
 </TwoColumns>
+
+### Valeurs phares portées par notre service
+
+<TwoColumns>
+
+  <div>
+    - Compétence, professionnalisme.
+    - Confiance, autonomie.
+    - Innovation, optimisation, efficacité.
+    - Bienveillance, honnêteté.
+  </div>
+  <div>
+    <ImageWrapper src="/images/centre_saint-doulchard.jpg" />
+  </div>
+</TwoColumns>
+
+### Pour faire reconnaître nos activités
+
+<TwoColumns>
+  <div>
+    <ImageWrapper src="/images/centre_saint-doulchard.jpg" />
+  </div>
+
+  <div>
+    - Nous inscrire dans une démarche qualité, avec obtention d’une certification LABELIX.
+    - Maintenir nos autorisations ASN, ARS.
+    - Nous adapter au mieux à la réforme sur l’activité de soin en médecine nucléaire.
+  </div>
+</TwoColumns>
+
+### Objectifs généraux
+
+<TwoColumns>
+
+  <div>
+    - Offrir à nos patients des délais de prise en charge hyper courts, dans des conditions optimales.
+    - Nous inscrire dans une démarche de formation continue à l’échelon individuel.
+    - Nous inscrire dans une démarche d’amélioration perpétuelle de nos pratiques à l’échelon du service.
+  </div>
+  <div>
+    <ImageWrapper src="/images/centre_saint-doulchard.jpg" />
+  </div>
+</TwoColumns>
