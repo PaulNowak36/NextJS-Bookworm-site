@@ -1,7 +1,7 @@
 ---
 title: "Groupe INOV"
 meta_title: "Accueil"
-image: "/images/inov_logo-bg-free.png"
+image: "/images/inov_logo-bg-free-V2.png"
 layout: "about"
 draft: false
 
