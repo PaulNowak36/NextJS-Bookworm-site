@@ -3,10 +3,48 @@ title: "Domaines d'expertise"
 draft: false
 ---
 
-// Images à ajouter 
+### Médecine nucléaire
+La médecine nucléaire regroupe deux grandes techniques d’imagerie fonctionnelle :
+- La **scintigraphie** conventionnelle
+- **La TEP / TEP-CT** (Tomographie par Émission de Positons)
+Ces examens permettent d’explorer le fonctionnement des organes, d’évaluer l’activité cellulaire et de détecter précocement certaines pathologies.
 
-### Imagerie TEP / TEP-CT
-Diagnostic de haute précision pour l’oncologie, la cardiologie et la neurologie.
+#### Scintigraphie conventionnelle
 
-### Médecine nucléaire conventionnelle
-Explorations fonctionnelles, scintigraphies et examens spécialisés.
+<TwoColumns>
+
+  <div>
+    Exploration fonctionnelle reposant sur la détection de **MRP (médicaments radiopharmaceutiques)** émetteurs de **photons gamma (γ)**.
+	- Utilisée pour analyser l’activité d’un organe ou d’un tissu.
+	- Permet d’obtenir des informations sur le fonctionnement cellulaire.
+	- Indiquée dans de nombreux domaines : cardiologie, endocrinologie, rhumatologie, etc.
+  </div>
+  <div>
+    <ImageWrapper src="/images/scan-alzheimer.png" />
+  </div>
+</TwoColumns>
+
+#### Imagerie TEP / TEP-CT
+
+<TwoColumns>
+
+  <div>
+    Technique d’imagerie de haute précision, particulièrement utilisée en **oncologie**, **cardiologie** et **neurologie**.
+
+    ##### Principe
+	- Injection d’un **sucre radioactif** (souvent du FDG) capté par les cellules actives.
+	- Détection des positons émis, permettant de reconstruire des **images 3D en couleurs**.
+	- Analyse fine de l’activité métabolique des tissus.
+    ##### Applications
+	- Détection et suivi des cancers.
+	- Évaluation de la viabilité myocardique.
+	- Étude des pathologies neurodégénératives.
+
+##### Note technique
+	Un TEP-scan permet d’observer la **microstructure** et l’activité métabolique des tissus **sans les détruire ni les découper**, grâce à une imagerie fonctionnelle non invasive.
+
+  </div>
+  <div>
+    <ImageWrapper src="/images/TEP-scan.jpg" />
+  </div>
+</TwoColumns>
