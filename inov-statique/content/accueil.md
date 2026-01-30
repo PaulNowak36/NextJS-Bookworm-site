@@ -14,11 +14,11 @@ social:
 
 Le Groupe **INOV** développe et opère des centres de médecine nucléaire modernes, centrés sur l’innovation, la qualité diagnostique et l’accompagnement des patients.
 
-<SousMenuButton href="/chiffres" className="btn btn-outline-primary">Nos chiffres clés</SousMenuButton>
-<SousMenuButton href="/domaines" className="btn btn-outline-primary">Nos domaines d'expertise</SousMenuButton>
-<SousMenuButton href="/engagement" className="btn btn-outline-primary">Notre engagement patient</SousMenuButton>
-<SousMenuButton href="/histoire" className="btn btn-outline-primary">Notre histoire</SousMenuButton>
-<SousMenuButton href="/missions" className="btn btn-outline-primary">Nos missions</SousMenuButton>
+<SousMenuButton type="outline" href="/chiffres" color="btn-outline-primary">Nos chiffres clés</SousMenuButton>
+<SousMenuButton type="outline" href="/domaines" color="btn-outline-secondary">Nos domaines d'expertise</SousMenuButton>
+<SousMenuButton type="outline" href="/engagement" color="btn-outline-primary">Notre engagement patient</SousMenuButton>
+<SousMenuButton type="outline" href="/histoire" color="btn-outline-primary">Notre histoire</SousMenuButton>
+<SousMenuButton type="outline" href="/missions" color="btn-outline-primary">Nos missions</SousMenuButton>
 
 ---
 

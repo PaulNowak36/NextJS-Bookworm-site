@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-const SousMenuButton = ({ href, type, rel, children }) => {
+const SousMenuButton = ({ href, type, rel, children, color }) => {
   return (
-    <Link href={href} target="_self" rel={`noopener noreferrer ${rel?(rel==="follow"?"":rel):"nofollow"}`} className={`btn mb-4 me-4 ${type === "outline"? "btn-outline-primary" : "btn-primary"}`}>
+    <Link href={href} target="_self" rel={`noopener noreferrer ${rel?(rel==="follow"?"":rel):"nofollow"}`} className={`btn mb-4 me-4 ${color}`}>
       {children}
     </Link>
   )
