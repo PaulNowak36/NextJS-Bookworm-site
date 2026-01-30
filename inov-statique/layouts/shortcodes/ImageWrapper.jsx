@@ -1,9 +1,9 @@
 import Link from "next/link"
 import NextImage from "next/image"
 
-const ImageWrapper = ({ src, children }) => {
+const ImageWrapper = ({ src, children, width, height }) => {
   return (
-    <div className="relative w-[300px] h-[200px] mb-8 overflow-hidden">
+    <div className={`relative ${width} ${height} mb-8 overflow-hidden`}>
       <NextImage 
         src={src}
         alt={src}
