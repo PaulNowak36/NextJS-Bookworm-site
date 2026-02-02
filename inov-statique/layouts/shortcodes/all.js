@@ -4,6 +4,7 @@ import MenuButton from "./menuButton";
 import ImageWrapper from "./ImageWrapper";
 import Chiffres from "./Chiffres";
 import TwoColumns from "./TwoColumns";
+import NewImageWrapper from "./newImageWrapper";
 
 const shortcodes = {
   Button,
@@ -12,6 +13,7 @@ const shortcodes = {
   ImageWrapper,
   Chiffres,
   TwoColumns,
+  NewImageWrapper,
 };
 
 export default shortcodes;
