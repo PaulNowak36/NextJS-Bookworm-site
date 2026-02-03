@@ -24,26 +24,19 @@ Le Groupe **INOV** développe et opère des centres de médecine nucléaire mode
 
 Accédez aux différentes infos:
 
-<MenuButton type="outline" href="/services" color="btn-outline-primary">
-  <ImageWrapper width="w-[300px]" height="h-[200px]" src="/images/scanner2.jpg" > 
-    <span className="text-white font-[Sans-serif] text-4xl">Services</span>
-  </ImageWrapper>
-</MenuButton>
+<MenuButton2 src="/images/scanner2.jpg" color="btn-outline-primary" href="/services" width="450px" height="300px"> 
+   <span className="text-white font-semibold font-[Sans-serif] text-7xl">Services</span>
+</MenuButton2>
 
-<MenuButton type="outline" href="/equipe" color="btn-outline-primary">
-  <ImageWrapper width="w-[300px]" height="h-[200px]" src="/images/equipe.png" > 
-    <span className="text-white font-[Sans-serif] text-4xl">L'Equipe</span>
-  </ImageWrapper>
-</MenuButton>
+<MenuButton2 src="/images/equipe.png" color="btn-outline-secondary" href="/equipe" width="450px" height="300px"> 
+   <span className="text-white font-semibold font-[Sans-serif] text-7xl">Equipe</span>
+</MenuButton2>
 
-<MenuButton className="p-0" type="outline" href="/projets" color="btn-outline-primary">
-  <ImageWrapper width="w-[300px]" height="h-[200px]" src="/images/centre_saint-doulchard.jpg" > 
-    <span className="text-white font-[Sans-serif] text-4xl">Projets</span>
-  </ImageWrapper>
-</MenuButton>
+<MenuButton2 src="/images/centre_saint-doulchard.jpg" color="btn-outline-third" href="/projets" width="450px" height="300px"> 
+   <span className="text-white font-semibold font-[Sans-serif] text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+">Projets</span>
+</MenuButton2>
 
 ---
- 
 
 
-<MenuButton2/>
