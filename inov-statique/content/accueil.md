@@ -42,13 +42,8 @@ Accédez aux différentes infos:
   </ImageWrapper>
 </MenuButton>
 
-<ImageWrapper width="w-[300px]" height="h-[200px]" src="/images/centre_saint-doulchard.jpg" > 
-    <span className="text-white font-[Sans-serif] text-4xl">Projets</span>
-  </ImageWrapper>
 ---
+ 
 
-<MenuButton className="p-0" type="outline" href="/projets" color="btn-outline-fourth">
-  <NewImageWrapper width={300} height={200} src="/images/centre_saint-doulchard.jpg" >
-    <span className="text-white font-[Sans-serif] text-4xl">Projets</span>
-  </NewImageWrapper>
-</MenuButton>
+
+<MenuButton2/>

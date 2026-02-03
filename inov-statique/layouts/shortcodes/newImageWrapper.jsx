@@ -4,7 +4,8 @@ import NextImage from "next/image"
 const NewImageWrapper = ({ src, children, width, height }) => {
   return (
     <div
-      className={`relative  w-[${width}px] h-[${height}px] rounded-lg bg-blue-500`}
+      className="relative rounded-lg bg-blue-500 border-blue-500 border-4 leading-none"
+      style={{ width: `${width}px`, height: `${height}px` }}
     >
       <NextImage
         src={src}
