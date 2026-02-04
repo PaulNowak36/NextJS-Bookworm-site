@@ -22,7 +22,7 @@ Le Groupe **INOV** développe et opère des centres de médecine nucléaire mode
 
 ---
 
-Accédez aux différentes infos:
+#### Accédez aux différentes infos:
 
 <MenuButton2 src="/images/scanner2.jpg" color="btn-outline-primary" href="/services" width="450px" height="300px"> 
    <span className="text-white font-semibold font-[Sans-serif] text-7xl">Services</span>
@@ -33,8 +33,7 @@ Accédez aux différentes infos:
 </MenuButton2>
 
 <MenuButton2 src="/images/centre_saint-doulchard.jpg" color="btn-outline-third" href="/projets" width="450px" height="300px"> 
-   <span className="text-white font-semibold font-[Sans-serif] text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
-">Projets</span>
+   <span className="text-white font-semibold font-[Sans-serif] text-7xl">Projets</span>
 </MenuButton2>
 
 ---

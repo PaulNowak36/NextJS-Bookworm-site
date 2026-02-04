@@ -3,7 +3,7 @@ import NextImage from "next/image"
 
 const ImageWrapper = ({ src, children, width, height }) => {
   return (
-    <div className={`relative ${width} ${height} mb-8 border border-blue-500`}>
+    <div className={`relative ${width} ${height} mb-8 `}>
 
       <NextImage 
         src={src}
