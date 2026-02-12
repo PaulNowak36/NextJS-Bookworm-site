@@ -3,6 +3,8 @@ title: "Domaines d'expertise"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 ### Médecine nucléaire
 La médecine nucléaire regroupe deux grandes techniques d’imagerie fonctionnelle :
 - La **scintigraphie** conventionnelle

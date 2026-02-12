@@ -1,9 +1,21 @@
 import { getSinglePage } from "@lib/contentParser";
-import { marked } from "marked";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
+// Composants React utilisables dans les fichiers .mdx
+import BackButton from "@layouts/shortcodes/BackButton";
+import SousMenuButton from "@layouts/shortcodes/sousMenuButton";
+import MenuButton2 from "@layouts/shortcodes/menuButton2";
+
+const components = {
+  BackButton,
+  SousMenuButton,
+  MenuButton2,
+};
 
 export default async function EquipeDetail({ params }) {
   const { slug } = params;
 
+  // Charge les fichiers .md et .mdx dans content/equipe
   const pages = await getSinglePage("content/equipe");
   const page = pages.find((p) => p.slug === slug);
 
@@ -13,14 +25,13 @@ export default async function EquipeDetail({ params }) {
 
   return (
     <div className="container py-10">
-      <h1 className="text-4xl font-bold mb-6">{page.frontmatter.title}</h1>
+      <h1 className="text-4xl font-bold mb-6">
+        {page.frontmatter.title}
+      </h1>
 
-      <div
-        className="prose max-w-none"
-        dangerouslySetInnerHTML={{
-          __html: marked(page.content),
-        }}
-      />
+      <div className="prose max-w-none">
+        <MDXRemote source={page.content} components={components} />
+      </div>
     </div>
   );
 }

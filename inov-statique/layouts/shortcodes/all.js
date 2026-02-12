@@ -6,6 +6,8 @@ import Chiffres from "./Chiffres";
 import TwoColumns from "./TwoColumns";
 import NewImageWrapper from "./newImageWrapper";
 import MenuButton2 from "./menuButton2";
+import BackButton from "./BackButton";
+
 const shortcodes = {
   Button,
   SousMenuButton,
@@ -15,6 +17,7 @@ const shortcodes = {
   TwoColumns,
   NewImageWrapper,
   MenuButton2,
+  BackButton
 };
 
 export default shortcodes;

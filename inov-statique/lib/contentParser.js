@@ -25,30 +25,47 @@ export const getListPage = async (filePath) => {
   };
 };
 
-// get all single pages, ex: blog/post.md
+// get all single pages, ex: blog/post.md or post.mdx
 export const getSinglePage = (folder) => {
   const filesPath = fs.readdirSync(path.join(folder));
-  const sanitizeFiles = filesPath.filter((file) => file.includes(".md"));
+
+  // Accepte .md et .mdx
+  const sanitizeFiles = filesPath.filter((file) =>
+    file.endsWith(".md") || file.endsWith(".mdx")
+  );
+
   const filterSingleFiles = sanitizeFiles.filter((file) =>
     file.match(/^(?!_)/)
   );
+
   const singlePages = filterSingleFiles.map((filename) => {
-    const slug = filename.replace(".md", "");
+    const isMDX = filename.endsWith(".mdx");
+    const slug = filename.replace(".mdx", "").replace(".md", "");
+
     const pageData = fs.readFileSync(path.join(folder, filename), "utf-8");
     const pageDataParsed = matter(pageData);
-    const frontmatterString = JSON.stringify(pageDataParsed.data);
-    const frontmatter = JSON.parse(frontmatterString);
+
+    const frontmatter = pageDataParsed.data;
     const content = pageDataParsed.content;
+
     const url = frontmatter.url ? frontmatter.url.replace("/", "") : slug;
-    return { frontmatter: frontmatter, slug: url, content: content };
+
+    return {
+      frontmatter,
+      slug: url,
+      content,
+      isMDX,
+    };
   });
 
   const publishedPages = singlePages.filter(
     (page) =>
-      !page.frontmatter.draft && page.frontmatter.layout !== "404" && page
+      !page.frontmatter.draft &&
+      page.frontmatter.layout !== "404" &&
+      page
   );
-  const filterByDate = sortByDate(publishedPages);
-  return filterByDate;
+
+  return sortByDate(publishedPages);
 };
 
 // get a regular page data from many pages, ex: about.md

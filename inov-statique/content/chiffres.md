@@ -3,6 +3,8 @@ title: "Chiffres clés du groupe INOV"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 Regardez ces fameux chiffres:
 
 <Chiffres width="w-80" height="h-80" color="bg-green-100"> 

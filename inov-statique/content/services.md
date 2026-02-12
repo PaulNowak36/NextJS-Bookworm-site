@@ -3,6 +3,8 @@ title: "Services"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" /> 
+
 Solutions complètes pour le développement, la gestion et l’optimisation de centres d’imagerie médicale.
 
 

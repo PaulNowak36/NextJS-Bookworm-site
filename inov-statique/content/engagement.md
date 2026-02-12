@@ -3,6 +3,8 @@ title: "Engagement patient"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 Nous plaçons l’humain au cœur de notre démarche : qualité des examens, réduction des délais, confort des patients et transparence des résultats.
 
 ### Politique qualité 

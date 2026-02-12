@@ -3,6 +3,8 @@ title: "Projets et Etude de Cas"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 Études de cas, centres opérationnels et projets en développement.
 
 ---

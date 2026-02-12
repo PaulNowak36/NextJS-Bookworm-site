@@ -3,6 +3,8 @@ title: "Notre histoire"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 ### 1998: Création du cabinet INOV de Saint-Doulchard
 
 <TwoColumns>

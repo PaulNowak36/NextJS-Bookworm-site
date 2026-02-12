@@ -1,11 +1,22 @@
 import config from "@config/config";
 import { markdownify } from "@lib/utils/textConverter";
-import { marked } from "marked";
 import Image from "next/image";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
+// Composants React utilisables dans le Markdown
+import BackButton from "./shortcodes/BackButton";
+import SousMenuButton from "./shortcodes/sousMenuButton";
+import MenuButton2 from "./shortcodes/menuButton2";
+
+const components = {
+  BackButton,
+  SousMenuButton,
+  MenuButton2,
+};
 
 const Contact = ({ data }) => {
   const { frontmatter, content } = data;
-  const { title, image } = frontmatter;
+  const { title } = frontmatter;
   const { contact_form_action } = config.params;
 
   return (
@@ -15,28 +26,19 @@ const Contact = ({ data }) => {
         {/* Titre */}
         {markdownify(title, "h1", "h2 mb-8 text-center")}
 
-        {/* 🔥 Contenu Markdown du fichier contact.md */}
-        <div
-          className="prose max-w-none mb-10"
-          dangerouslySetInnerHTML={{
-            __html: marked(content),
-          }}
-        />
-      </div>
+        {/* Bouton retour placé dans le layout */}
+        {/* <div className="mb-6">
+          <BackButton href="/" label="Retour" />
+        </div> */}
 
-      {/* <div className="img-cover mb-8 flex items-center justify-center">
-        <Image
-          src="/images/favicon.png"
-          width={100}
-          height={100}
-          alt={title}
-          className="rounded-lg"
-        />
-      </div> */}
+        {/* Contenu MDX */}
+        <div className="prose max-w-none mb-10">
+          <MDXRemote source={content} components={components} />
+        </div>
+      </div>
 
       {/* Formulaire */}
       <div className="container max-w-[700px]">
-
         <form
           className="contact-form"
           method="POST"
@@ -46,48 +48,28 @@ const Contact = ({ data }) => {
             <label className="mb-2 block" htmlFor="firstName">
               Prénom
             </label>
-            <input
-              className="form-input w-full"
-              name="firstName"
-              type="text"
-              required
-            />
+            <input className="form-input w-full" name="firstName" type="text" required />
           </div>
 
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="name">
               Nom
             </label>
-            <input
-              className="form-input w-full"
-              name="name"
-              type="text"
-              required
-            />
+            <input className="form-input w-full" name="name" type="text" required />
           </div>
 
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="email">
               Email
             </label>
-            <input
-              className="form-input w-full"
-              name="email"
-              type="email"
-              required
-            />
+            <input className="form-input w-full" name="email" type="email" required />
           </div>
 
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="subject">
               Sujet
             </label>
-            <input
-              className="form-input w-full"
-              name="subject"
-              type="text"
-              required
-            />
+            <input className="form-input w-full" name="subject" type="text" required />
           </div>
 
           <div className="mb-6">

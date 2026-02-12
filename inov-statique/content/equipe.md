@@ -3,6 +3,8 @@ title: "Equipe"
 draft: false
 ---
 
+<BackButton href="/" label="Retour" />
+
 Les membres de notre équipe.
 
 ---
