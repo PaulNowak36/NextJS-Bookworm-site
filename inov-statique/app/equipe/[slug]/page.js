@@ -5,11 +5,13 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import BackButton from "@layouts/shortcodes/BackButton";
 import SousMenuButton from "@layouts/shortcodes/sousMenuButton";
 import MenuButton2 from "@layouts/shortcodes/menuButton2";
+import TeamMember from "@layouts/shortcodes/TeamMember";
 
 const components = {
   BackButton,
   SousMenuButton,
   MenuButton2,
+  TeamMember,
 };
 
 export default async function EquipeDetail({ params }) {
