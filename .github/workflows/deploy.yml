@@ -17,7 +17,7 @@ jobs:
         run: rm -rf docs && mkdir docs
 
       - name: Copy static site to docs
-        run: cp -R inov-site/* docs/
+        run: cp -R inov-statique/* docs/
 
       - name: Disable Jekyll
         run: touch docs/.nojekyll
