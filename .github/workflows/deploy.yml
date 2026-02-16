@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Deploy static Next.js site to GitHub Pages
 
 on:
   push:
@@ -13,11 +13,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js
+        run: npm run build
+
+      - name: Export static site
+        run: npm run export
+
       - name: Clean docs folder
         run: rm -rf docs && mkdir docs
 
-      - name: Copy static site to docs
-        run: cp -R inov-statique/* docs/
+      - name: Copy exported site to docs
+        run: cp -R out/* docs/
 
       - name: Disable Jekyll
         run: touch docs/.nojekyll
