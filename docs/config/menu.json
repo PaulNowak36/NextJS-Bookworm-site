@@ -1,0 +1,119 @@
+{
+  "main": [
+    {
+      "name": "Accueil",
+      "url": "/",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Chiffres",
+          "url": "/chiffres"
+        }, 
+        {
+          "name": "Domaines",
+          "url": "/domaines"
+        },
+        {
+          "name": "Engagement",
+          "url": "/engagement"
+        },
+        {
+          "name": "Histoire",
+          "url": "/histoire"
+        },
+        {
+          "name": "Missions",
+          "url": "/missions"
+        }    
+      ]
+    },
+    {
+      "name": "Services",
+      "url": "/services/",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Conseil",
+          "url": "/services/conseil"
+        },
+        {
+          "name": "Développement",
+          "url": "/services/developpement"
+        },
+        {
+          "name": "Gestion",
+          "url": "/services/gestion"
+        },
+        {
+          "name": "Services clés",
+          "url": "/services/services-cles"
+        }    
+      ]
+    },
+    {
+      "name": "Equipe",
+      "url": "/equipe",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Fondateurs",
+          "url": "/equipe/fondateurs"
+        },
+        {
+          "name": "Médecins",
+          "url": "/equipe/medecins"
+        },
+        {
+          "name": "Conseil consultatif",
+          "url": "/equipe/conseil-consultatif"
+        },
+        {
+          "name": "Gestion Opérations",
+          "url": "/equipe/gestion-operations"
+        }    
+      ]
+    },
+    {
+      "name": "Projets",
+      "url": "/projets",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Centres",
+          "url": "/projets/centres"
+        },
+        {
+          "name": "Maison de Santé",
+          "url": "/projets/maison-sante"
+        },
+        {
+          "name": "Autres Projets",
+          "url": "/projets/autres-projets"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  
+  ],
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Elements",
+      "url": "/elements"
+    },
+    {
+      "name": "Mentions Légales",
+      "url": "/mentions-legales"
+    }
+  ]
+}
