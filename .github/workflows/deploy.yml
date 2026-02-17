@@ -23,6 +23,11 @@ jobs:
           cd inov-statique
           npm run build
 
+      - name: Move public assets to root
+        run: |
+          cp -R inov-statique/out/public/* inov-statique/out/ || true
+          rm -rf inov-statique/out/public
+
       - name: Clean docs folder
         run: rm -rf docs && mkdir docs
 
