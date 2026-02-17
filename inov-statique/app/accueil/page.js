@@ -7,6 +7,7 @@ import DefaultLayout from "@layouts/Default";
 export default async function AccueilPage() {
   const pages = await getSinglePage("content");
   const accueil = pages.find((p) => p.slug === "accueil");
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const { frontmatter, content } = accueil;
   const { layout, image, title } = frontmatter;
@@ -20,8 +21,11 @@ export default async function AccueilPage() {
       {/* Hero avec image */}
       {image && (
         <div
-          className="w-full h-64 bg-cover bg-center mb-10"
-          style={{ backgroundImage: `url(${image})` }}
+          className="w-full h-64 bg-cover bg-center mb-10"     
+          style={{
+            backgroundImage: `url(${basePath}${image})`,
+          }}
+
         >
           <div className="h-full w-full bg-black/40 flex items-center justify-center">
             <h1 className="text-white text-4xl font-bold">{title}</h1>
