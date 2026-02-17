@@ -1,22 +1,7 @@
 "use client";
 
 import Link from "next/link";
-
-function withBasePath(path) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
-  // Ne touche pas aux URLs externes (http, https, data, blob)
-  if (!path || /^(https?:|data:|blob:)/.test(path)) return path;
-
-  // Si le chemin est absolu (commence par /) et basePath existe, on préfixe
-  if (path.startsWith("/") && basePath) {
-    // Évite le double préfixe si déjà présent
-    if (path.startsWith(basePath + "/") || path === basePath) return path;
-    return `${basePath}${path}`;
-  }
-
-  return path;
-}
+import withBasePath from "@lib/utils/basePath";
 
 const MenuButton2 = ({ href, color, src, height, width, children }) => {
   const resolvedSrc = withBasePath(src);

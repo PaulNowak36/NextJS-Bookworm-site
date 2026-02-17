@@ -5,62 +5,20 @@ draft: false
 
 <BackButton href="/equipe" label="Retour" />
 
-<div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "1rem",
-    marginBottom: "2rem",
-    width: "100%",
-    maxWidth: "600px",
-  }}
->
+<div className="flex flex-wrap justify-between gap-10">
+  <TeamMember
+    name="Dr Exemple 1"
+    role="Médecine Nucléaire"
+    image="/images/medecins.jpg"
+  >
+    Responsable d’activité clinique et référent qualité diagnostique.
+  </TeamMember>
 
-  {/* Bloc image */}
-  {/*
-  <div className="gallery" style={{ flexShrink: 0, width: "120px", textAlign: "center" }}>
-    <img
-      src="/profile-vide.jpg.webp"
-      alt="Hugo Lemasles"
-      style={{ borderRadius: "50%", width: "100%", height: "auto", display: "block" }}
-    />
-  </div>
-  */}
-
-  {/* Bloc texte */}
-  <div style={{ flex: 1, textAlign: "left" }}>
-    <strong>Dr Exemple</strong><br />
-    Médecine Nucléaire
-    <p>Responsable d’activité clinique et référent qualité diagnostique.</p>
-  </div>
-</div>
-
-<div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "1rem",
-    marginBottom: "2rem",
-    width: "100%",
-    maxWidth: "600px",
-  }}
->
-
-  {/* Bloc image */}
-  {/*
-  <div className="gallery" style={{ flexShrink: 0, width: "120px", textAlign: "center" }}>
-    <img
-      src="/Victor-Arnould.jpg"
-      alt="Victor ARNOULD"
-      style={{ borderRadius: "50%", width: "100%", height: "auto", display: "block" }}
-    />
-  </div>
-  */}
-
-  {/* Bloc texte */}
-  <div style={{ flex: 1, textAlign: "left" }}>
-    <strong>Dr Exemple 2</strong><br />
-    Médecine Nucléaire
-    <p>Expert en TEP/TEP-CT et protocoles avancés.</p>
-  </div>
+  <TeamMember
+    name="Dr Exemple 2"
+    role="Médecine Nucléaire"
+    image="/images/medecins.jpg"
+  >
+    Expert en TEP/TEP-CT et protocoles avancés.
+  </TeamMember>
 </div>

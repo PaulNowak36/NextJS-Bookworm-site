@@ -5,40 +5,21 @@ draft: false
 
 <BackButton href="/equipe" label="Retour" />
 
-<div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "1rem",
-    marginBottom: "2rem",
-    width: "100%",
-    maxWidth: "600px",
-  }}
->
+<div className="flex flex-wrap justify-between gap-10">
+  <TeamMember
+    name="Professeur Exemple"
+    role="PUPH – Conseil Scientifique"
+    image="/images/conseiller.jpg"
+  >
+    Supervision des opérations, optimisation des flux et pilotage des centres.
+  </TeamMember>
 
-  {/* Bloc texte */}
-  <div style={{ flex: 1, textAlign: "left" }}>
-    <strong>Professeur Exemple</strong><br />
-    PUPH – Conseil Scientifique
-    <p>Expertise académique, recherche clinique et accompagnement stratégique.</p>
-  </div>
+  <TeamMember
+    name="Expert International"
+    role="Middle East Health Systems"
+    image="/images/conseiller.jpg"
+  >
+    Support aux projets internationaux et aux décideurs institutionnels.
+  </TeamMember>
 </div>
 
-<div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "1rem",
-    marginBottom: "2rem",
-    width: "100%",
-    maxWidth: "600px",
-  }}
->
-
-  {/* Bloc texte */}
-  <div style={{ flex: 1, textAlign: "left" }}>
-    <strong>Expert International</strong><br />
-    Middle East Health Systems
-    <p>Support aux projets internationaux et aux décideurs institutionnels.</p>
-  </div>
-</div>
