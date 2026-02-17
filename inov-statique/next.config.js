@@ -20,9 +20,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // Nécessaire car ton site est servi depuis /NextJS-Bookworm-site/
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath: "/inov-statique",
+  assetPrefix: "/inov-statique",
+
 
   // Support MDX
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
