@@ -18,20 +18,15 @@ jobs:
           cd inov-statique
           npm install
 
-      - name: Build Next.js
+      - name: Build Next.js (static export via output: export)
         run: |
           cd inov-statique
           npm run build
 
-      - name: Export static site
-        run: |
-          cd inov-statique
-          npm run export
-
       - name: Clean docs folder
         run: rm -rf docs && mkdir docs
 
-      - name: Copy exported site to docs
+      - name: Copy static site to docs
         run: cp -R inov-statique/out/* docs/
 
       - name: Disable Jekyll
