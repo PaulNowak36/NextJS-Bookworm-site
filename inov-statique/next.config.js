@@ -6,25 +6,23 @@ const withMDX = createMDX({
   extension: /\.mdx?$/
 })
 
-// Nom EXACT du repo GitHub
 const repoName = 'NextJS-Bookworm-site'
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   reactStrictMode: true,
-
-  // Export statique obligatoire pour GitHub Pages
   output: 'export',
 
-  // GitHub Pages ne supporte pas l'optimisation d'images Next.js
   images: {
     unoptimized: true,
   },
 
-  basePath: "/inov-statique",
-  assetPrefix: "/inov-statique",
+  // ✅ basePath UNIQUEMENT en production (GitHub Pages)
+  ...(isProd && {
+    basePath: `/${repoName}`,
+    assetPrefix: `/${repoName}/`,
+  }),
 
-
-  // Support MDX
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 }
 
