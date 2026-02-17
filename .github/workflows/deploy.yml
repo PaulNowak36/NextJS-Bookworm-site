@@ -18,14 +18,16 @@ jobs:
           cd inov-statique
           npm install
 
-      - name: Build Next.js 
+      - name: Build Next.js
         run: |
           cd inov-statique
           npm run build
 
-      - name: Move public assets to root
+      # ✅ CORRECTION CLÉ : aplatir public/images → images
+      - name: Move public images to root images
         run: |
-          cp -R inov-statique/out/public/* inov-statique/out/ || true
+          mkdir -p inov-statique/out/images
+          cp -R inov-statique/out/public/images/* inov-statique/out/images/ || true
           rm -rf inov-statique/out/public
 
       - name: Clean docs folder
