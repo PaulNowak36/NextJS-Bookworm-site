@@ -21,7 +21,7 @@ draft: false
    <span className="text-white font-semibold font-[Sans-serif] text-center text-2xl">La Maison de Santé Pluriprofessionnelle (MSP)</span>
 </MenuButton2>
 
-<MenuButton2 src="/images/projet-medical.jpg" color="btn-outline-primary" href="/projets/autres-projets" width="450px" height="300px"> 
+<MenuButton2 src="/images/autres-projets.jpg" color="btn-outline-primary" href="/projets/autres-projets" width="450px" height="300px"> 
    <span className="text-white font-semibold font-[Sans-serif] text-center text-4xl">Autres Projets</span>
 </MenuButton2>
 

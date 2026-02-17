@@ -11,7 +11,7 @@ Nous plaçons l’humain au cœur de notre démarche : qualité des examens, ré
 
 <TwoColumns>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]"  src="/images/centre_saint-doulchard.jpg" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]"  src="/images/politique-qualite.jpg" />
   </div>
 
   <div>
@@ -33,7 +33,7 @@ Nous plaçons l’humain au cœur de notre démarche : qualité des examens, ré
     - Bienveillance, honnêteté.
   </div>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/centre_saint-doulchard.jpg" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/valeurs-phares.jpg" />
   </div>
 </TwoColumns>
 
@@ -41,7 +41,7 @@ Nous plaçons l’humain au cœur de notre démarche : qualité des examens, ré
 
 <TwoColumns>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/centre_saint-doulchard.jpg" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/activites-imagerie.jpg" />
   </div>
 
   <div>
@@ -61,6 +61,6 @@ Nous plaçons l’humain au cœur de notre démarche : qualité des examens, ré
     - Nous inscrire dans une démarche d’amélioration perpétuelle de nos pratiques à l’échelon du service.
   </div>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]"  src="/images/centre_saint-doulchard.jpg" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]"  src="/images/medecin-patient.jpg" />
   </div>
 </TwoColumns>

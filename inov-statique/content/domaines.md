@@ -22,7 +22,7 @@ Ces examens permettent d’explorer le fonctionnement des organes, d’évaluer 
 	- Indiquée dans de nombreux domaines : cardiologie, endocrinologie, rhumatologie, etc.
   </div>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/scan-alzheimer.png" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/scan-tumeur.png" />
   </div>
 </TwoColumns>
 
@@ -47,6 +47,6 @@ Ces examens permettent d’explorer le fonctionnement des organes, d’évaluer 
 
   </div>
   <div>
-    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/TEP-scan.jpg" />
+    <ImageWrapper width="w-[600px]" height="h-[400px]" src="/images/tep-scan.jpg" />
   </div>
 </TwoColumns>
