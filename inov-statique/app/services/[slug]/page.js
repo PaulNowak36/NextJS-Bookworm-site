@@ -34,3 +34,11 @@ export default async function ServiceDetail({ params }) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const pages = await getSinglePage("content/services");
+
+  return pages.map((page) => ({
+    slug: page.slug,
+  }));
+}

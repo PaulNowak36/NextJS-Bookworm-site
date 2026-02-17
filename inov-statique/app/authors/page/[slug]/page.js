@@ -49,11 +49,7 @@ export const generateStaticParams = () => {
   const totalPages = Math.ceil(allSlug.length / pagination);
   let paths = [];
 
-  for (let i = 1; i < totalPages; i++) {
-    paths.push({
-      slug: (i + 1).toString(),
-    });
-  }
-
-  return paths;
+  return Array.from({ length: totalPages }, (_, index) => ({
+    slug: (index + 1).toString(),
+  }));
 };

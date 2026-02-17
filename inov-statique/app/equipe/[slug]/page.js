@@ -37,3 +37,11 @@ export default async function EquipeDetail({ params }) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const pages = await getSinglePage("content/equipe");
+
+  return pages.map((page) => ({
+    slug: page.slug,
+  }));
+}

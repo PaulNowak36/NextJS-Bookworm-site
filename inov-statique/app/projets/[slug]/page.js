@@ -33,3 +33,11 @@ export default async function ProjetsDetail({ params }) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const pages = await getSinglePage("content/projets");
+
+  return pages.map((page) => ({
+    slug: page.slug,
+  }));
+}
