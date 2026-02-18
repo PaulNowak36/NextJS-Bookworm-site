@@ -5,11 +5,15 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import BackButton from "@layouts/shortcodes/BackButton";
 import SousMenuButton from "@layouts/shortcodes/sousMenuButton";
 import MenuButton2 from "@layouts/shortcodes/menuButton2";
+import TeamMember from "@layouts/shortcodes/TeamMember";
+import ImageWrapper from "@layouts/shortcodes/ImageWrapper";
 
 const components = {
   BackButton,
   SousMenuButton,
   MenuButton2,
+  TeamMember,
+  ImageWrapper
 };
 
 

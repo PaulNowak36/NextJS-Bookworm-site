@@ -13,7 +13,7 @@ Les membres de notre équipe.
 
 <div className="flex flex-wrap justify-center gap-4">
 
-<MenuButton2 src="/images/fondateurs.png" color="btn-outline-fourth" href="/equipe/fondateurs" width="450px" height="300px"> 
+<MenuButton2 src="/images/fondateurs.jpg" color="btn-outline-fourth" href="/equipe/fondateurs" width="450px" height="300px"> 
    <span className="text-white font-semibold font-[Sans-serif] text-center text-3xl">Fondateurs</span>
 </MenuButton2>
 
@@ -25,7 +25,7 @@ Les membres de notre équipe.
    <span className="text-white font-semibold font-[Sans-serif] text-center text-3xl">Conseil Consultatif</span>
 </MenuButton2>
 
-<MenuButton2 src="/images/chef-de-projet.jpg" color="btn-outline-secondary" href="/equipe/gestion-operations" width="450px" height="300px"> 
+<MenuButton2 src="/images/project-manager.jpg" color="btn-outline-secondary" href="/equipe/gestion-operations" width="450px" height="300px"> 
    <span className="text-white font-semibold font-[Sans-serif] text-center text-4xl">Gestion des opérations</span>
 </MenuButton2>
 
