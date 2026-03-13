@@ -23,15 +23,17 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: inov-statique/package-lock.json
 
       - name: Install dependencies
         run: |
           cd inov-statique
-          npm install
+          npm ci
 
       - name: Build
         env:
-          NEXT_PUBLIC_BASE_PATH: /NextJS-Bookworm-site
+          GITHUB_PAGES: 'true'
+          GITHUB_PAGES_REPO: NextJS-Bookworm-site
         run: |
           cd inov-statique
           npm run build

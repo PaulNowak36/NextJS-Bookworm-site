@@ -4,9 +4,12 @@ const withMDX = createMDX({
   extension: /\.mdx?$/,
 })
 
-// Nom EXACT du repo GitHub
-const repoName = 'NextJS-Bookworm-site'
-const isProd = process.env.NODE_ENV === 'production'
+// Nom du repo GitHub (modifiable via variable d'environnement)
+const repoName = process.env.GITHUB_PAGES_REPO || 'NextJS-Bookworm-site'
+
+// N'active le préfixe GitHub Pages que pour les builds dédiés
+const isGithubPagesBuild =
+  process.env.GITHUB_PAGES === 'true' || process.env.GITHUB_ACTIONS === 'true'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,8 +23,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // BasePath seulement en prod (sinon ça casse localhost)
-  ...(isProd && {
+  // BasePath seulement pour GitHub Pages (sinon ça casse localhost)
+  ...(isGithubPagesBuild && {
     basePath: `/${repoName}`,
     assetPrefix: `/${repoName}/`,
   }),
